@@ -6,6 +6,8 @@ import { useConnect } from "wagmi";
 import Footer from "./components/Footer";
 import Greeter from "./components/Greeter";
 import { useToast } from "@chakra-ui/react";
+import DrawerExample from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
 
 export default function Home() {
   const { isConnected } = useConnect();
@@ -25,7 +27,7 @@ export default function Home() {
     <>
       <Header />
       <Navbar />
-      <Hero />
+      <Dashboard/>
     </>
   );
 }
